@@ -22,20 +22,31 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.overflow-y {
-    overflow-y: auto;
-}
 .fixed-bottom {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-}
-a {
-    text-decoration: none;
-    color: #6f6f6f;
 }
 .space-between {
     justify-content: space-between;
 }
+.img-hov {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    display: none;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.overlay i {
+    font-size: 80px;
+    color: #fff;
+}
+
 
 
 /* Typo */
@@ -45,6 +56,11 @@ body {
 h4,
 h2 {
     color: #fff;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #6f6f6f;
 }
 p {
     color: #6f6f6f;
@@ -99,6 +115,7 @@ p {
     vertical-align: middle;
 }
 .overflow-playlist {
+    height: 25vh;
     overflow-y: auto;
 }
 .download {
@@ -188,7 +205,6 @@ p {
 }
 .artist {
     border-radius: 50%;
-    overflow: hidden;
 }
 
 
@@ -224,9 +240,11 @@ footer {
 }
 .footer-left i, 
 .footer-right i {
-    color: #fff;
     margin-right: 15px;
     font-size: 12px;
+}
+.footer-left i {
+    color: #6f6f6f;
 }
 .row-1-foot-cen {
     margin-bottom: 10px;
@@ -245,7 +263,7 @@ footer {
 .footer-center .fa-arrow-right {
     margin-right: 20px;
 }
-.minute-bar {
+.bar {
     display: inline-block;
     height: 5px;
     width: 70%;
@@ -255,7 +273,8 @@ footer {
     vertical-align: middle;
     text-align: left;
 }
-.minute-bar-white {
+.bar-white {
+    position: relative;
     display: inline-block;
     width: 20%;
     background-color: #fff;
@@ -265,15 +284,59 @@ footer {
     text-align: right;
 }
 .footer-right i {
+    color: #fff;
     vertical-align: middle;
 }
-.footer-right .minute-bar {
+.footer-right .bar {
     width: 40%;
 }
 .footer-right .fa-volume-up {
     margin-right: 10px;
 }
+.bar-white-after {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
-
-
+/* Hover */
+a:hover {
+    color: #fff;
+}
+.plus-square:hover {
+    background-color: #fff;
+}
+.col > a:hover {
+    text-decoration: underline;
+}
+.brano-nome:hover {
+    text-decoration: underline;
+}
+.footer-left i:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+.footer-center i:hover {
+    transform: scale(1.2);
+}
+.footer-right i:hover {
+    transform: scale(1.2);
+}
+.bar-white:hover {
+    background-color: #4cac52;
+}
+.bar-white:hover > .bar-white-after {
+    display: block;
+}
+.img-hov:hover > .overlay {
+    display: block;
+}
+.banner button:hover {
+    transform: scale(1.1);
+}
 

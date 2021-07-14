@@ -16,6 +16,7 @@
         <link rel="shortcut icon" href="./img/spotify.ico" type="image/x-icon">
         <!-- /Favicon -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
         <title>Spotify</title>
     </head>
     <body>
@@ -45,11 +46,10 @@
                     <h4>PLAYLIST</h4>
 
                     <div>
-                        <div class="plus-square"> <i class="fas fa-plus centering"></i> </div>
-                        <a href="#">Crea playlist</a>
+                        <a class="crea-playlist" href="#"><div class="plus-square"> <i class="fas fa-plus centering"></i> </div> Crea playlist</a>
                     </div>
 
-                    <div class="overflow-playlist" >
+                    <div class="overflow-playlist">
                         <ul>
                             <li><a href="#">Nome Playlist</a> </li>
                             <li><a href="#">Nome Playlist</a> </li>
@@ -104,33 +104,51 @@
                         <h2>Recently played</h2>
                         <div class="flex row">
                             <div class="col">
-                                <img src="./img/metal_lifting.jpg" alt="Metal">
-                                <h4>Heavy Metal</h4>
+                                <div class="img-hov">
+                                    <img src="./img/metal_lifting.jpg" alt="Metal">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Heavy Metal</h4></a>
                                 <p>Subtitle</p>
                             </div>
-                            <div class="col">
-                                <img src="./img/stranger.jpeg" alt="Stranger Things">
-                                <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/stranger.jpeg" alt="Stranger Things">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4></a>
                                 <p>Kyle Dixon & Michael Stein</p>
                             </div>
-                            <div class="col">
-                                <img src="./img/aquietplace.jpeg" alt="Quiet place">
-                                <h4>A quiet place</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/aquietplace.jpeg" alt="Quiet place">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>A quiet place</h4></a>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/split.jpeg" alt="Split">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Split</h4></a>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/cure.jpeg" alt="Cure for wellness">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>A cure for wellness</h4></a>
                                 <p>Subtitle</p>
                             </div>
                             <div class="col">
-                                <img src="./img/split.jpeg" alt="Split">
-                                <h4>Split</h4>
-                                <p>Subtitle</p>
-                            </div>
-                            <div class="col">
-                                <img src="./img/cure.jpeg" alt="Cure for wellness">
-                                <h4>A cure for wellness</h4>
-                                <p>Subtitle</p>
-                            </div>
-                            <div class="col">
-                                <img src="./img/sinister.jpeg" alt="Sinister">
-                                <h4>Sinister</h4>
+                                <div class="img-hov">
+                                    <img src="./img/sinister.jpeg" alt="Sinister">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Sinister</h4></a>
                                 <p>Subtitle</p>
                             </div>
                         </div>
@@ -141,13 +159,19 @@
                         <h2>Recently played</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         <div class="flex row">
-                            <div class="col">
-                                <img src="./img/radar.jpeg" alt="Realease radar">
-                                <h4>Realease Radar</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/radar.jpeg" alt="Realease radar">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Realease Radar</h4></a>
                             </div>
-                            <div class="col">
-                                <img src="./img/mixdaily.jpeg" alt="Daily mix 1">
-                                <h4>Daily mix 1</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <img src="./img/mixdaily.jpeg" alt="Daily mix 1">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                </div>
+                                <a href="#"><h4>Daily mix 1</h4></a>
                             </div>
                         </div>
                     </div>
@@ -157,13 +181,19 @@
                         <h2>Most popular artists</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         <div class="flex row">
-                            <div class="col">
-                                <img class="artist" src="./img/youg.jpeg" alt="Lana Del Rey">
-                                <h4>Lana Del Rey</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                    <img class="artist" src="./img/youg.jpeg" alt="Lana Del Rey">                                
+                                </div>
+                                <a href="#"><h4>Lana Del Rey</h4></a>
                             </div>
-                            <div class="col">
-                                <img class="artist" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
-                                <h4>Ludovico Einaudi</h4>
+                            <div class="col">                                
+                                <div class="img-hov">
+                                    <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
+                                    <img class="artist" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">                                    
+                                </div>
+                                <a href="#"><h4>Ludovico Einaudi</h4></a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +210,7 @@
                 <img src="./img/sinister.jpeg" alt="Sinister">
                 <span>
                     <a href="#"><h4>Sinister</h4></a>
-                    <a href="#">Brano nome</a>
+                    <a class="brano-nome" href="#">Brano nome</a>
                 </span>
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
@@ -195,8 +225,8 @@
                 </div>
                 <div>
                     <span>0:25</span>
-                    <div class="minute-bar">
-                        <div class="minute-bar minute-bar-white"></div>
+                    <div class="bar">
+                        <div class="bar bar-white"> <div class="bar-white-after"></div></div>
                     </div>
                     <span>4:35</span>
                 </div>
@@ -205,8 +235,8 @@
                 <i class="fas fa-list"></i>
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
-                <div class="minute-bar">
-                    <div class="minute-bar minute-bar-white"></div>
+                <div class="bar">
+                    <div class="bar bar-white"> <div class="bar-white-after"></div></div>
                 </div>
             </div>
         </footer>
