@@ -6,6 +6,9 @@
 }
 
 /* Common */
+.flex {
+    display: flex;
+}
 
 /* Typo */
 body {
@@ -13,5 +16,21 @@ body {
 }
 
 /* Main */
+.sidebar,
+.main-page {
+    height: calc(100vh - 90px);
+}
+.sidebar {
+    width: 230px;
+    background-color: aqua;
+}
+.main-page {
+    width: calc(100% - 230px);
+    background-color: blanchedalmond;
+}
 
 /* Footer */
+footer {
+    height: 90px;
+    background-color: #282828;
+}
