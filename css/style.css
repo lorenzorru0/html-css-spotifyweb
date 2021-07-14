@@ -9,6 +9,9 @@
 .flex {
     display: flex;
 }
+ul {
+    list-style: none;
+}
 
 /* Typo */
 body {
@@ -22,11 +25,30 @@ body {
 }
 .sidebar {
     width: 230px;
-    background-color: aqua;
+    background-color: #000;
+    padding-top: 20px;
 }
 .main-page {
     width: calc(100% - 230px);
     background-color: blanchedalmond;
+}
+
+/* sidebar */
+.logo {
+    width: 130px;
+    color: #fff;
+}
+.sidebar li {
+    padding: 10px 0px 0px 20px;
+}
+.sidebar span {
+    font-size: 10px;
+    color: #6f6f6f;
+    vertical-align: middle;
+}
+.icone-sidebar {
+    height: 20px;
+    vertical-align: middle;
 }
 
 /* Footer */
