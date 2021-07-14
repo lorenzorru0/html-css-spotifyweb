@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
         <!-- /Google font -->
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- /Fontawesome -->
         <!-- Favicon -->
         <link rel="shortcut icon" href="./img/spotify.ico" type="image/x-icon">
         <!-- /Favicon -->
@@ -19,25 +22,58 @@
         <!-- Main page -->
         <main class="flex">
             <!-- Sidebar -->
-            <nav class="sidebar">
-                <ul>
-                    <li>
-                        <img class="logo" src="./img/logo.svg" alt="Spotify logo">
-                    </li>
-                    <li>
-                        <img class="icone-sidebar" src="./img/home.svg" alt="Home">
-                        <span>Home</span> 
-                    </li>
-                    <li>
-                        <img class="icone-sidebar" src="./img/search.svg" alt="Search">
-                        <span>Cerca</span> 
-                    </li>
-                    <li>
-                        <img class="icone-sidebar" src="./img/libreria.svg" alt="Split">
-                        <span>La tua libreria</span> 
-                    </li>
-                </ul>
+            <nav class="flex sidebar">
+                <div class="column-top">
+                    <ul>
+                        <li>
+                            <img class="logo" src="./img/logo.svg" alt="Spotify logo">
+                        </li>
+                        <li>
+                            <img class="icone-sidebar" src="./img/home.svg" alt="Home">
+                            <span>Home</span> 
+                        </li>
+                        <li>
+                            <img class="icone-sidebar" src="./img/search.svg" alt="Search">
+                            <span>Cerca</span> 
+                        </li>
+                        <li>
+                            <img class="icone-sidebar" src="./img/libreria.svg" alt="Split">
+                            <span>La tua libreria</span> 
+                        </li>
+                    </ul>
 
+                    <h4>PLAYLIST</h4>
+
+                    <div>
+                        <div class="plus-square"> <i class="fas fa-plus centering"></i> </div>
+                        <span>Crea playlist</span>
+                    </div>
+
+                    <div class="overflow-y" >
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="column-bottom">
+                    <ul>
+                        <li>
+                            <img class="download" src="./img/download.svg" alt="Download">
+                            Installa app
+                        </li>
+                        <li>
+                            <div class="profile"> <img class="profile" src="./img/profile.svg" alt="Profile"> </div>
+                            <h4>John Doe</h4>
+                        </li>
+                    </ul>
+                </div>
 
             </nav>
             <!-- /Sidebar -->
@@ -52,7 +88,7 @@
         <!-- /Main page -->
 
         <!-- Footer page -->
-        <footer>
+        <footer class="fixed-bottom">
 
         </footer>
         <!-- /Footer page -->
