@@ -8,6 +8,7 @@
 /* Common */
 main {
     position: relative;
+    font-size: 10px;
 }
 .flex {
     display: flex;
@@ -27,6 +28,10 @@ ul {
 .fixed-bottom {
     position: fixed;
     bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: #6f6f6f;
 }
 
 
@@ -54,7 +59,7 @@ h4 {
 }
 .main-page {
     width: calc(100% - 230px);
-    background-color: blanchedalmond;
+    background-color: #141922;
 }
 
 /* sidebar */
@@ -65,7 +70,7 @@ h4 {
 .sidebar .column-top li {
     padding-top: 10px;
 }
-.sidebar span {
+.sidebar a {
     vertical-align: middle;
 }
 .icone-sidebar {
@@ -109,6 +114,37 @@ h4 {
 }
 .column-bottom li {
     padding-top: 15px;
+}
+
+/* Main-page */
+.banner {
+    height: 90px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner button {
+    color: #fff;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nav-row {
+    justify-content: center;
+}
+.nav-row li {
+    display: inline-block;
+    margin: 10px 0px 40px 0px;
+}
+.nav-row li a {
+    display: inline-block;
+    padding: 10px;
 }
 
 
