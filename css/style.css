@@ -29,6 +29,12 @@ ul {
 .space-between {
     justify-content: space-between;
 }
+.middle {
+    vertical-align: middle;
+}
+.inline-block {
+    display: inline-block;
+}
 .img-hov {
     position: relative;
     overflow: hidden;
@@ -94,25 +100,19 @@ p {
 .sidebar .column-top li {
     padding-top: 10px;
 }
-.sidebar a {
-    vertical-align: middle;
-}
 .icone-sidebar {
     height: 20px;
-    vertical-align: middle;
 }
 .sidebar .column-top h4 {
     padding: 30px 0px 10px 0px;
 }
 .plus-square {
-    display: inline-block;
     position: relative;
     width: 35px;
     height: 35px;
     background-color: #6f6f6f;
     color: #000;
     font-size: 17px;
-    vertical-align: middle;
 }
 .overflow-playlist {
     height: 25vh;
@@ -120,15 +120,9 @@ p {
 }
 .download {
     height: 10px;
-    vertical-align: middle;
 }
 .profile {
     height: 25px;
-    vertical-align: middle;
-}
-.column-bottom h4,
-.profile {
-    display: inline-block;
 }
 .profile {
     height: 25px;
@@ -231,12 +225,6 @@ footer {
 }
 .footer-left span {
     padding: 0px 40px 0px 10px;
-    display: inline-block;
-}
-.footer-left img,
-.footer-left span,
-.footer-left i {
-    vertical-align: middle;
 }
 .footer-left i, 
 .footer-right i {
@@ -264,21 +252,20 @@ footer {
     margin-right: 20px;
 }
 .bar {
-    display: inline-block;
     height: 5px;
     width: 70%;
     background-color: #5a5a5a;
     border-radius: 2px;
     margin: 0px 10px;
-    vertical-align: middle;
     text-align: left;
 }
 .bar-white {
     position: relative;
-    display: inline-block;
     width: 20%;
     background-color: #fff;
-    margin: -10px 0px 0px 0px;
+    margin: 0;
+    top: -5px;
+    left: 0px;
 }
 .footer-right {
     text-align: right;
