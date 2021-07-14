@@ -8,3 +8,12 @@
     }
 }
 
+/* <700px */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+    width: calc((100% - 45px) / 3);
+    }
+}
