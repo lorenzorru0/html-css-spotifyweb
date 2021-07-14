@@ -4,7 +4,8 @@
         flex-wrap: wrap;
     }
     .col {
-    width: calc((100% - 60px) / 4);
+        width: calc((100% - 60px) / 4);
+        margin-bottom: 20px;
     }
 }
 
@@ -14,6 +15,118 @@
         flex-wrap: wrap;
     }
     .col {
-    width: calc((100% - 45px) / 3);
+        width: calc((100% - 45px) / 3);
+    }
+    .left-icons {
+        vertical-align: middle;
+    }
+    .left-icons .fa-heart{
+        display: block;
+    }
+    .footer-right i {
+        margin-right: 10px;
+    }
+}
+
+/* <600px */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc((100% - 30px) / 2);
+    }
+    .sidebar {
+        width: 40px;
+        padding: 10px 0px 10px 0px;
+        align-items: center;
+    }
+    .main-page {
+        width: calc(100% - 40px);
+    }
+    .banner {
+        width: calc(100% - 40px);
+    }
+    .logo,
+    .playlist,
+    .sidebar li a,
+    .sidebar li h4 {
+        display: none;
+    }
+    .download {
+        text-align: center;
+        width: 25px;
+    }
+    .logo-mini {
+        display: inline-block;
+    }
+    .column-bottom li:first-child {
+        border: none;
+    }
+    .footer-left > img {
+        display: none;
+    }
+    .footer-center .fa-play-circle {
+        margin: 0px 15px;
+    }
+    .footer-center .fa-arrow-left {
+        margin-left: 5px;
+    }
+    .footer-center .fa-arrow-right {
+        margin-right: 5px;
+    }
+    .bar {
+        width: 50%;
+        margin: 0;
+    }
+    .bar-white {
+        width: 20%;
+    }
+    .footer-left span {
+        padding: 0px 10px 0px 10px;
+    }
+    .footer-right i {
+        margin-right: 5px;
+    }
+    .footer-right .fa-volume-up {
+        margin-right: 1px;
+    }
+}
+
+/* <425px */
+@media screen and (max-width: 425px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc(100% - 15px);
+    }
+    .footer-center .fa-play-circle {
+        font-size: 20px;
+        margin: 0px 8px;
+    }
+    .footer-center i {
+        font-size: 10px;
+    }
+    .footer-center .fa-arrow-left {
+        margin-left: 5px;
+    }
+    .footer-center .fa-arrow-right {
+        margin-right: 5px;
+    }   
+    .bar {
+        margin: 0px 1px;
+    }
+    .banner {
+        height: 40px;
+        line-height: 40px;
+    }
+    .banner button {
+        margin-right: 20px;
+        padding: 5px 20px;
+        border-radius: 15px;
+    }
+    .nav-row {
+        margin-top: 40px;;
     }
 }
