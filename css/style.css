@@ -33,14 +33,21 @@ a {
     text-decoration: none;
     color: #6f6f6f;
 }
+.space-between {
+    justify-content: space-between;
+}
 
 
 /* Typo */
 body {
     font-family: 'Montserrat', sans-serif;
 }
-h4 {
+h4,
+h2 {
     color: #fff;
+}
+p {
+    color: #6f6f6f;
 }
 
 /* Main */
@@ -58,6 +65,7 @@ h4 {
     color: #6f6f6f;
 }
 .main-page {
+    position: relative;
     width: calc(100% - 230px);
     background-color: #141922;
 }
@@ -118,10 +126,12 @@ h4 {
 
 /* Main-page */
 .banner {
+    position: fixed;
+    top: 0;
     height: 90px;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+    width: calc(100% - 230px);
+    line-height: 90px;
+    text-align: right;
     background-color: rgba(0, 0, 0, 0.3);
 }
 .banner button {
@@ -136,15 +146,46 @@ h4 {
 }
 
 .nav-row {
+    margin-top: 90px;
     justify-content: center;
 }
 .nav-row li {
     display: inline-block;
-    margin: 10px 0px 40px 0px;
+    margin-top: 10px;
 }
 .nav-row li a {
     display: inline-block;
     padding: 10px;
+}
+
+.big-row {
+    padding: 40px 30px 0px 15px;
+}
+.big-row p {
+    margin-top: 10px;
+}
+.row {
+    margin-top: 25px;
+}
+.col {
+    width: calc((100% - 75px) / 6);
+    text-align: center;
+    margin-right: 15px;
+}
+.col img {
+    width: 100%;
+}
+.col h4 {
+    margin: 20px 0px 10px 0px;
+}
+.overflow-main {
+    width: 100%;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+.artist {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
