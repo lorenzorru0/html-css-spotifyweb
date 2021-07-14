@@ -1,4 +1,10 @@
 /* <1100px */
 @media screen and (max-width: 1100px) {
-    
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+    width: calc((100% - 60px) / 4);
+    }
 }
+
