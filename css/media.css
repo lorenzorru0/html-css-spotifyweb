@@ -129,4 +129,18 @@
     .nav-row {
         margin-top: 40px;;
     }
+    .left-icons .fa-heart{
+        display: inline;
+    }
+    .left-icons {
+        padding: 5px 0px 0px 10px;
+        text-align: center;
+    }
+    .volume {
+        display: block;
+        padding-top: 10px;
+    }
+    .footer-right .bar {
+        width: 60%;
+    }
 }

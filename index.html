@@ -24,7 +24,7 @@
         <main class="flex">
             <!-- Sidebar -->
             <nav class="flex sidebar">
-                <div class="column-top">
+                
                     <ul>
                         <li>
                             <img class="logo" src="./img/logo.svg" alt="Spotify logo">
@@ -63,7 +63,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                
                 
                 <div class="column-bottom">
                     <ul>
@@ -185,16 +185,16 @@
                         <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         <div class="flex row">
                             <div class="col">                                
-                                <div class="img-hov">
+                                <div class="img-hov artist">
                                     <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
-                                    <img class="artist" src="./img/youg.jpeg" alt="Lana Del Rey">                                
+                                    <img src="./img/youg.jpeg" alt="Lana Del Rey">                                
                                 </div>
                                 <a href="#"><h4>Lana Del Rey</h4></a>
                             </div>
                             <div class="col">                                
-                                <div class="img-hov">
+                                <div class="img-hov artist">
                                     <div class="overlay"> <i class="centering far fa-play-circle"></i> </div>
-                                    <img class="artist" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">                                    
+                                    <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi">                                    
                                 </div>
                                 <a href="#"><h4>Ludovico Einaudi</h4></a>
                             </div>
@@ -208,7 +208,7 @@
         <!-- /Main page -->
 
         <!-- Footer page -->
-        <footer class="flex fixed-bottom space-between">
+        <footer class="flex space-between">
             <div class="footer-left">
                 <img class="middle" src="./img/sinister.jpeg" alt="Sinister">
                 <span class="middle inline-block" >
@@ -237,12 +237,16 @@
                 </div>
             </div>
             <div class="footer-right">
-                <i class="fas fa-list"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="inline-block middle bar">
-                    <div class="inline-block bar bar-white"> <div class="bar-white-after"></div></div>
-                </div>
+                <span>
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-desktop"></i>
+                </span>
+                <span class="volume">
+                    <i class="fas fa-volume-up middle"></i>
+                    <div class="inline-block middle bar">
+                        <div class="inline-block bar bar-white"> <div class="bar-white-after"></div></div>
+                    </div>
+                </span>
             </div>
         </footer>
         <!-- /Footer page -->
