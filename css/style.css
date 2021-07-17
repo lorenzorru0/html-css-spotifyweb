@@ -308,8 +308,8 @@ a:hover {
     color: #fff;
 }
 .nav-row li a:active {
-    padding-bottom: 9px;
-    border-bottom: 1px solid #4cac52;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #4cac52;
 }
 .plus-square:hover {
     background-color: #fff;
