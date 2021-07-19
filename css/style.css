@@ -118,11 +118,8 @@ p {
     color: #000;
     font-size: 17px;
 }
-.column-top {
-    height: calc(100% - 119.88px);
-}
 .playlist {
-    height: calc(100% - 261.86px);
+    height: 100%;
     overflow-y: auto;
 }
 .download {
@@ -320,15 +317,16 @@ a:hover {
 .brano-nome:hover {
     text-decoration: underline;
 }
-.footer-left i:hover {
+.footer-left i:hover,
+.footer-center i:hover,
+.footer-right i:hover {
     color: #fff;
     transform: scale(1.2);
 }
-.footer-center i:hover {
-    transform: scale(1.2);
-}
-.footer-right i:hover {
-    transform: scale(1.2);
+.footer-left i:active,
+.footer-center i:active, 
+.footer-right i:active {
+    color: #4cac52;
 }
 .bar-white:hover {
     background-color: #4cac52;
